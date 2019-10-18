@@ -4,10 +4,6 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <link rel="stylesheet" type="text/css" href="t3_behine.css">
         <style>
-                @font-face {
-                font-family: iransans;
-                src: url(IranianSans.ttf);
-            }
             @font-face {
                 font-family: broya;
                 src: url(BRoya.ttf);
@@ -73,7 +69,11 @@
                 background-color:#21B0EC;
                 color:white;
                 font-size:18px;
-
+            }
+            td{
+                font-size:20px;
+                padding-top:0px;
+                padding-bottom:0px;
             }
         </style>
         <script>
@@ -226,6 +226,7 @@
                     lost_profit_all = lost_profit_all + lost_profit[i];         // سود از دست رفته بخاطر فزونی تقاضا در همه روزها
                     sell_tailings_all = sell_tailings_all + sell_tailings[i];   // سود حاصل از فروش روزنامه باطله در همه روزها
                     benefit_all = benefit_all + benefit[i];                     // سود همه روزها
+
 
                     // **************************** Table ************************
                     var header_table = "<caption>شبیه سازی برای خرید 70 روزنامه</caption><tr><th>سود روزانه</th><th>درآمد ناشی از فروش به قیمت باطله</th><th>سود از دست رفته به خاطر فزونی تقاضا</th><th>درآمد حاصل از فروش</th><th>تقاضا</th><th>ارقام تصادفی برا تقاضا</th><th>نوع روز</th><th>ارقام تصادفی برای تعیین نوع روز</th><th>روز</th></tr>";
