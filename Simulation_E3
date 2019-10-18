@@ -5,10 +5,6 @@
         <link rel="stylesheet" type="text/css" href="t3_behine.css">
         <style>
             @font-face {
-                font-family: iransans;
-                src: url(IranianSans.ttf);
-            }
-            @font-face {
                 font-family: broya;
                 src: url(BRoya.ttf);
             }
