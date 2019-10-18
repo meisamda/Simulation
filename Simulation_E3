@@ -5,6 +5,10 @@
         <link rel="stylesheet" type="text/css" href="t3_behine.css">
         <style>
             @font-face {
+                font-family: iransans;
+                src: url(IranianSans.ttf);
+            }
+            @font-face {
                 font-family: broya;
                 src: url(BRoya.ttf);
             }
@@ -82,6 +86,7 @@
                 var all_table = "";
                 var rd_day =[""];
                 var mode_day =[""];
+                var mode_day_per =[""];
                 var rd_taghaza =[""];
                 var taghaza =[""];
                 var income =[""];            // درامد فروش 1 روز
@@ -98,15 +103,19 @@
                     rd_day[i] = 00 + Math.floor(Math.random() * 99);
                     if (rd_day[i] >= 1 & rd_day[i] <= 35){
                         mode_day[i] = "good";
+                        mode_day_per[i] = "خوب";
                     }
                     else if (rd_day[i] >= 36 & rd_day[i] <= 80){
                         mode_day[i] = "middle";
+                        mode_day_per[i] = "متوسط";
                     }
                     else if (rd_day[i] >= 81 & rd_day[i] <= 99){
                         mode_day[i] = "bad";
+                        mode_day_per[i] = "بد";
                     }
                     else if (rd_day[i] == 0){
                         mode_day[i] = "bad";
+                        mode_day_per[i] = "بد";
                     }
                     
                     rd_taghaza[i] = 00 + Math.floor(Math.random() * 99);
@@ -239,7 +248,7 @@
                     + income[i]  + "</td><td>"
                     + taghaza[i]  + "</td><td>"
                     + rd_taghaza[i]  + "</td><td>"
-                    + mode_day[i]  + "</td><td>"
+                    + mode_day_per[i]  + "</td><td>"
                     + rd_day[i]  + "</td><td>"
                     + i  + "</td></tr>";
                     body_table = body_table + row_col_table ;
