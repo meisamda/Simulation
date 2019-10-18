@@ -10,7 +10,7 @@
             }
             @font-face {
                 font-family: broya;
-                src: url('http://8upload.ir/uploads/f745918820.ttf');
+                src: url(BRoya.ttf);
             }
             body{
                 font-family: broya;
