@@ -10,7 +10,7 @@
             }
             @font-face {
                 font-family: broya;
-                src: url(BRoya.ttf);
+                src: url('https://github.com/meisamda/Simulation/blob/master/BRoya.ttf');
             }
             body{
                 font-family: broya;
